@@ -22,96 +22,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="300" verticalHuggingPriority="1000" axis="vertical" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="xdr-RD-0aX">
-                                <rect key="frame" x="20" y="64" width="627" height="311"/>
+                            <stackView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckW-Qn-72j">
+                                <rect key="frame" x="0.0" y="221" width="667" height="94"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZMU-fe-aTd">
-                                        <rect key="frame" x="20" y="0.0" width="607" height="287.5"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h04-m6-cQ0">
-                                                <rect key="frame" x="162.5" y="0.0" width="282" height="287.5"/>
-                                                <subviews>
-                                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madlibs" translatesAutoresizingMaskIntoConstraints="NO" id="XQL-gH-uNB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="282" height="287.5"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" priority="250" constant="573" id="PQG-Jt-zpT"/>
-                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" priority="250" constant="308" id="rRY-nC-oqQ"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xyH-tU-SlK">
-                                                <rect key="frame" x="136" y="287.5" width="335" height="0.0"/>
-                                                <subviews>
-                                                    <textView clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="redraw" bouncesZoom="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fBN-OI-f0O">
-                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="0.0"/>
-                                                        <color key="backgroundColor" red="0.93835006480000005" green="0.93835006480000005" blue="0.93835006480000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <edgeInsets key="layoutMargins" top="-9" left="8" bottom="8" right="8"/>
-                                                        <string key="text">Welcome to Mad Libs! I will ask you to fill in words to comlete a story. You won't be able to see the whole story until you are done filling in all the missing words. That's part of the fun. Click below to get started...</string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    </textView>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="fBN-OI-f0O" firstAttribute="top" relation="lessThanOrEqual" secondItem="xyH-tU-SlK" secondAttribute="top" id="Qnn-vc-wrm"/>
-                                                </constraints>
-                                            </stackView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="xyH-tU-SlK" firstAttribute="top" secondItem="h04-m6-cQ0" secondAttribute="bottom" constant="150" id="e7r-bG-ecS"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TaZ-Qm-vu0">
-                                        <rect key="frame" x="460" y="287.5" width="167" height="23.5"/>
-                                        <subviews>
-                                            <button clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aI-vH-x3U">
-                                                <rect key="frame" x="0.0" y="0.0" width="167" height="23.5"/>
-                                                <color key="backgroundColor" red="0.68258176813471505" green="0.68258176813471505" blue="0.68258176813471505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                <state key="normal" title="GET STARTED!">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="Dqu-X9-AEY" kind="show" id="Ga9-o6-Lxv"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="167" id="8kW-UK-Xeu"/>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="25" id="RMa-pv-i0N"/>
-                                        </constraints>
-                                    </stackView>
+                                    <textView clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="redraw" bouncesZoom="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fBN-OI-f0O">
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="94"/>
+                                        <color key="backgroundColor" red="0.93835006480000005" green="0.93835006480000005" blue="0.93835006480000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <edgeInsets key="layoutMargins" top="-9" left="8" bottom="8" right="8"/>
+                                        <string key="text">Welcome to Mad Libs! I will ask you to fill in words to comlete a story. You won't be able to see the whole story until you are done filling in all the missing words. That's part of the fun. Click below to get started...</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="ZMU-fe-aTd" firstAttribute="top" secondItem="xdr-RD-0aX" secondAttribute="top" id="1Iu-cc-eEc"/>
-                                    <constraint firstItem="TaZ-Qm-vu0" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZMU-fe-aTd" secondAttribute="bottom" id="9Yc-ka-nB1"/>
-                                    <constraint firstItem="ZMU-fe-aTd" firstAttribute="leading" secondItem="xdr-RD-0aX" secondAttribute="leading" priority="250" id="Kwk-kK-Zai"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZMU-fe-aTd" secondAttribute="trailing" priority="250" constant="20" id="aMM-YT-CtQ"/>
-                                    <constraint firstItem="ZMU-fe-aTd" firstAttribute="leading" secondItem="xdr-RD-0aX" secondAttribute="leading" priority="250" constant="20" id="lJt-HO-IjY"/>
-                                    <constraint firstItem="ZMU-fe-aTd" firstAttribute="top" secondItem="xdr-RD-0aX" secondAttribute="top" id="pTe-ah-vGo"/>
-                                    <constraint firstItem="TaZ-Qm-vu0" firstAttribute="top" secondItem="ZMU-fe-aTd" secondAttribute="bottom" constant="150" id="vvD-Wz-SKD"/>
+                                    <constraint firstItem="fBN-OI-f0O" firstAttribute="top" secondItem="ckW-Qn-72j" secondAttribute="top" id="Yt1-LF-ILP"/>
                                 </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vr2-Kp-JCM">
+                                <rect key="frame" x="20" y="0.0" width="627" height="221"/>
+                                <subviews>
+                                    <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madlibs" translatesAutoresizingMaskIntoConstraints="NO" id="XQL-gH-uNB">
+                                        <rect key="frame" x="0.0" y="0.0" width="627" height="221"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Zgr-IA-8d0">
+                                <rect key="frame" x="192" y="331" width="459" height="40"/>
+                                <subviews>
+                                    <button clearsContextBeforeDrawing="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aI-vH-x3U">
+                                        <rect key="frame" x="0.0" y="0.0" width="459" height="40"/>
+                                        <color key="backgroundColor" red="0.68258176813471505" green="0.68258176813471505" blue="0.68258176813471505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="GET STARTED!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Dqu-X9-AEY" kind="show" id="Ga9-o6-Lxv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.93835006476683935" green="0.93835006476683935" blue="0.93835006476683935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xdr-RD-0aX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="01j-Eb-AKP"/>
-                            <constraint firstItem="xdr-RD-0aX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7RH-cT-pWC"/>
-                            <constraint firstItem="xdr-RD-0aX" firstAttribute="leading" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="E5C-vD-LV8"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="lessThanOrEqual" secondItem="xdr-RD-0aX" secondAttribute="bottom" priority="250" id="J45-N4-Pgy"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xdr-RD-0aX" secondAttribute="bottom" id="Owa-oD-mZf"/>
-                            <constraint firstItem="xdr-RD-0aX" firstAttribute="centerX" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UNF-FF-kp0"/>
-                            <constraint firstItem="xdr-RD-0aX" firstAttribute="top" relation="lessThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="cb8-ns-fKu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xdr-RD-0aX" secondAttribute="trailing" id="rXW-Ic-LhH"/>
-                            <constraint firstItem="xdr-RD-0aX" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" priority="750" constant="25" id="xAb-ws-54v"/>
+                            <constraint firstItem="vr2-Kp-JCM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8A0-yH-ZXV"/>
+                            <constraint firstAttribute="trailing" secondItem="Zgr-IA-8d0" secondAttribute="trailing" constant="16" id="8XM-Lz-sQz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vr2-Kp-JCM" secondAttribute="trailing" id="CGf-Xd-WdY"/>
+                            <constraint firstAttribute="trailing" secondItem="ckW-Qn-72j" secondAttribute="trailing" id="F9L-SS-dZJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vr2-Kp-JCM" secondAttribute="bottom" constant="154" id="FJA-jr-8sl"/>
+                            <constraint firstItem="Zgr-IA-8d0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="192" id="JMU-zT-q88"/>
+                            <constraint firstAttribute="bottom" secondItem="ckW-Qn-72j" secondAttribute="bottom" constant="60" id="JgU-Io-gsC"/>
+                            <constraint firstAttribute="bottom" secondItem="Zgr-IA-8d0" secondAttribute="bottom" constant="4" id="Qyq-cJ-GsA"/>
+                            <constraint firstAttribute="trailing" secondItem="ckW-Qn-72j" secondAttribute="trailing" id="dfk-dg-zrg"/>
+                            <constraint firstItem="vr2-Kp-JCM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="doJ-h0-JX6"/>
+                            <constraint firstItem="ckW-Qn-72j" firstAttribute="top" secondItem="vr2-Kp-JCM" secondAttribute="bottom" id="kd7-vU-l2i"/>
+                            <constraint firstAttribute="trailing" secondItem="ckW-Qn-72j" secondAttribute="trailing" id="r9K-QE-RYr"/>
+                            <constraint firstItem="ckW-Qn-72j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uUf-aw-1CK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rDR-b4-ycB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="997.60000000000002" y="36.431784107946029"/>
+            <point key="canvasLocation" x="996" y="34.632683658170919"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="6gi-s9-WAX">
