@@ -22,9 +22,9 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if let secondVC = segue.destination as! SecondViewController{
-            
-        }
+//        if let secondVC = segue.destination as SecondViewController{
+//            
+//        }
     }
 
 }
