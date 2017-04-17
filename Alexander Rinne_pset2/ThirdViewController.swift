@@ -1,36 +1,21 @@
 //
-//  SecondViewController.swift
+//  ThirdViewController.swift
 //  Alexander Rinne_pset2
 //
-//  Created by Alexander Rinne on 15-04-17.
+//  Created by Alexander Rinne on 16-04-17.
 //  Copyright © 2017 Alexander Rinne. All rights reserved.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
+//var objStory = Story(stream: <#String#>)
+
+
+
+class ThirdViewController: UIViewController {
     
-    func readTextFile(){
-        
-        let path = Bundle.main.path(forResource: "madlib0-simple", ofType: "txt")
-        print(path!)
-        
-        let filemgr = FileManager.default
-        if filemgr.fileExists(atPath: path!){
-            do {
-                let fullText = try String(contentsOfFile: "", encoding: String.Encoding.utf8)
-                print(fullText)
-                
-            }catch let error as NSError{
-                print("Error \(error)")
-            }
-        }
+    
 
-        
-    }
-//    var classStory = Story()
-
-    @IBOutlet weak var OkButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,6 +27,13 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let secondVC = segue.destination as? ThirdViewController {
+            
+//            objStory.read(stream: String)
+        }
+    }
 
     /*
     // MARK: - Navigation

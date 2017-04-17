@@ -13,6 +13,14 @@
 		FA7939751EA27DD500C39113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7939741EA27DD500C39113 /* Assets.xcassets */; };
 		FA7939781EA27DD500C39113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7939761EA27DD500C39113 /* LaunchScreen.storyboard */; };
 		FA7939801EA27E9A00C39113 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA79397F1EA27E9A00C39113 /* SecondViewController.swift */; };
+		FA7939821EA4120700C39113 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7939811EA4120700C39113 /* ThirdViewController.swift */; };
+		FA7939861EA4222700C39113 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7939851EA4222700C39113 /* Story.swift */; };
+		FA79398D1EA4FA5E00C39113 /* madlib0_simple.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA7939871EA4FA5E00C39113 /* madlib0_simple.txt */; };
+		FA79398E1EA4FA5E00C39113 /* madlib1_tarzan.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA7939881EA4FA5E00C39113 /* madlib1_tarzan.txt */; };
+		FA79398F1EA4FA5E00C39113 /* madlib2_university.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA7939891EA4FA5E00C39113 /* madlib2_university.txt */; };
+		FA7939901EA4FA5E00C39113 /* madlib3_clothes.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA79398A1EA4FA5E00C39113 /* madlib3_clothes.txt */; };
+		FA7939911EA4FA5E00C39113 /* madlib4_dance.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA79398B1EA4FA5E00C39113 /* madlib4_dance.txt */; };
+		FA7939921EA4FA5E00C39113 /* madlibs.png in Resources */ = {isa = PBXBuildFile; fileRef = FA79398C1EA4FA5E00C39113 /* madlibs.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		FA7939771EA27DD500C39113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA7939791EA27DD500C39113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA79397F1EA27E9A00C39113 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FA7939811EA4120700C39113 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		FA7939851EA4222700C39113 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		FA7939871EA4FA5E00C39113 /* madlib0_simple.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib0_simple.txt; sourceTree = "<group>"; };
+		FA7939881EA4FA5E00C39113 /* madlib1_tarzan.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib1_tarzan.txt; sourceTree = "<group>"; };
+		FA7939891EA4FA5E00C39113 /* madlib2_university.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib2_university.txt; sourceTree = "<group>"; };
+		FA79398A1EA4FA5E00C39113 /* madlib3_clothes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib3_clothes.txt; sourceTree = "<group>"; };
+		FA79398B1EA4FA5E00C39113 /* madlib4_dance.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib4_dance.txt; sourceTree = "<group>"; };
+		FA79398C1EA4FA5E00C39113 /* madlibs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = madlibs.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,8 @@
 		FA79396C1EA27DD500C39113 /* Alexander Rinne_pset2 */ = {
 			isa = PBXGroup;
 			children = (
+				FA7939811EA4120700C39113 /* ThirdViewController.swift */,
+				FA7939851EA4222700C39113 /* Story.swift */,
 				FA79396D1EA27DD500C39113 /* AppDelegate.swift */,
 				FA79396F1EA27DD500C39113 /* ViewController.swift */,
 				FA7939711EA27DD500C39113 /* Main.storyboard */,
@@ -63,6 +81,12 @@
 				FA7939741EA27DD500C39113 /* Assets.xcassets */,
 				FA7939761EA27DD500C39113 /* LaunchScreen.storyboard */,
 				FA7939791EA27DD500C39113 /* Info.plist */,
+				FA7939871EA4FA5E00C39113 /* madlib0_simple.txt */,
+				FA7939881EA4FA5E00C39113 /* madlib1_tarzan.txt */,
+				FA7939891EA4FA5E00C39113 /* madlib2_university.txt */,
+				FA79398A1EA4FA5E00C39113 /* madlib3_clothes.txt */,
+				FA79398B1EA4FA5E00C39113 /* madlib4_dance.txt */,
+				FA79398C1EA4FA5E00C39113 /* madlibs.png */,
 			);
 			path = "Alexander Rinne_pset2";
 			sourceTree = "<group>";
@@ -127,7 +151,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7939781EA27DD500C39113 /* LaunchScreen.storyboard in Resources */,
+				FA7939901EA4FA5E00C39113 /* madlib3_clothes.txt in Resources */,
+				FA79398E1EA4FA5E00C39113 /* madlib1_tarzan.txt in Resources */,
+				FA7939921EA4FA5E00C39113 /* madlibs.png in Resources */,
 				FA7939751EA27DD500C39113 /* Assets.xcassets in Resources */,
+				FA79398D1EA4FA5E00C39113 /* madlib0_simple.txt in Resources */,
+				FA79398F1EA4FA5E00C39113 /* madlib2_university.txt in Resources */,
+				FA7939911EA4FA5E00C39113 /* madlib4_dance.txt in Resources */,
 				FA7939731EA27DD500C39113 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,7 +171,9 @@
 			files = (
 				FA7939801EA27E9A00C39113 /* SecondViewController.swift in Sources */,
 				FA7939701EA27DD500C39113 /* ViewController.swift in Sources */,
+				FA7939821EA4120700C39113 /* ThirdViewController.swift in Sources */,
 				FA79396E1EA27DD500C39113 /* AppDelegate.swift in Sources */,
+				FA7939861EA4222700C39113 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +337,7 @@
 				FA79397E1EA27DD500C39113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
