@@ -14,12 +14,23 @@ import UIKit
 
 class ThirdViewController: UIViewController {
     
+    var finalStory: String?
     
-
+    @IBOutlet weak var finalStoryField: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        finalStoryField.text = finalStory
+        
+        self.navigationItem.hidesBackButton = true
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonItemPressed))
+    }
+    
+    func doneButtonItemPressed(_ sender: UIBarButtonItem) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
 
     override func didReceiveMemoryWarning() {

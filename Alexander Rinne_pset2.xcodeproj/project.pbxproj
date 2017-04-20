@@ -21,6 +21,7 @@
 		FA7939901EA4FA5E00C39113 /* madlib3_clothes.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA79398A1EA4FA5E00C39113 /* madlib3_clothes.txt */; };
 		FA7939911EA4FA5E00C39113 /* madlib4_dance.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA79398B1EA4FA5E00C39113 /* madlib4_dance.txt */; };
 		FA7939921EA4FA5E00C39113 /* madlibs.png in Resources */ = {isa = PBXBuildFile; fileRef = FA79398C1EA4FA5E00C39113 /* madlibs.png */; };
+		FA7939941EA616B500C39113 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7939931EA616B500C39113 /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		FA79398A1EA4FA5E00C39113 /* madlib3_clothes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib3_clothes.txt; sourceTree = "<group>"; };
 		FA79398B1EA4FA5E00C39113 /* madlib4_dance.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = madlib4_dance.txt; sourceTree = "<group>"; };
 		FA79398C1EA4FA5E00C39113 /* madlibs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = madlibs.png; sourceTree = "<group>"; };
+		FA7939931EA616B500C39113 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				FA79396D1EA27DD500C39113 /* AppDelegate.swift */,
 				FA79396F1EA27DD500C39113 /* ViewController.swift */,
 				FA7939711EA27DD500C39113 /* Main.storyboard */,
+				FA7939931EA616B500C39113 /* FirstViewController.swift */,
 				FA79397F1EA27E9A00C39113 /* SecondViewController.swift */,
 				FA7939741EA27DD500C39113 /* Assets.xcassets */,
 				FA7939761EA27DD500C39113 /* LaunchScreen.storyboard */,
@@ -172,6 +175,7 @@
 				FA7939801EA27E9A00C39113 /* SecondViewController.swift in Sources */,
 				FA7939701EA27DD500C39113 /* ViewController.swift in Sources */,
 				FA7939821EA4120700C39113 /* ThirdViewController.swift in Sources */,
+				FA7939941EA616B500C39113 /* FirstViewController.swift in Sources */,
 				FA79396E1EA27DD500C39113 /* AppDelegate.swift in Sources */,
 				FA7939861EA4222700C39113 /* Story.swift in Sources */,
 			);

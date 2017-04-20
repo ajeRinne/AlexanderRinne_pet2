@@ -8,41 +8,80 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UITextFieldDelegate {
     
-    func readTextFile(){
-        
-        let path = Bundle.main.path(forResource: "madlib0-simple", ofType: "txt")
-        print(path!)
-        
-        let filemgr = FileManager.default
-        if filemgr.fileExists(atPath: path!){
-            do {
-                let fullText = try String(contentsOfFile: "", encoding: String.Encoding.utf8)
-                print(fullText)
-                
-            }catch let error as NSError{
-                print("Error \(error)")
-            }
+    
+    
+    var story: Story?
+    var storyName: String?
+    
+    
+    @IBOutlet weak var wordCount: UITextView!
+    @IBOutlet weak var wordInput: UITextField!
+    @IBOutlet weak var pleaseType: UILabel!
+    
+    @IBAction func okButton(_ sender: Any) {
+    
+        if wordInput.text!.isEmpty {
+            wordInput.placeholder = "You didn't fill in a word."
         }
+        else{
+            
+            story?.fillInPlaceholder(word: wordInput.text!)
+            wordInput.text = nil
+            
+            let placeholderCount : Int = story!.getPlaceholderRemainingCount()
+            let count = String(placeholderCount)
+            wordCount.text = count + " words left."
+            
+            pleaseType.text = "please type a(n)'" + story!.getNextPlaceholder() + "'."
+            
+            if story!.isFilledIn() {
+                performSegue(withIdentifier: "Complete", sender: self)
+            }
 
-        
+        }
     }
-//    var classStory = Story()
-
-    @IBOutlet weak var OkButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        if let path = Bundle.main.path(forResource: storyName, ofType: "txt") {
+            do {
+                let contents = try String(contentsOfFile: path)
+                story = Story(stream: contents)
+            } catch {
+                print("Contents couldn't be opened.")
+            }
+        } else {
+            print("File couldn't be found.")
+        }
+        
+        let placeholderCount : Int = story!.getPlaceholderRemainingCount()
+        let count = String(placeholderCount)
+        wordCount.text = count + " words left."
+        
+        pleaseType.text = "please type a(n)'" + story!.getNextPlaceholder() + "'."
+        
         // Do any additional setup after loading the view.
+    }
+    
+    // send the text to the next view
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? ThirdViewController {
+            let stringStory: String = story!.toString()
+            viewController.finalStory = stringStory
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    }
     
-
+    
     /*
     // MARK: - Navigation
 
@@ -53,4 +92,4 @@ class SecondViewController: UIViewController {
     }
     */
 
-}
+
